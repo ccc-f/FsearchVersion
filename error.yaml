@@ -1,0 +1,7 @@
+ThinkPHP:
+  - ThinkPHP
+  - V[\d.]+
+Tomcat:
+  - apache tomcat/[\d.]+
+Nginx:  
+  - nginx/[\d.]+
