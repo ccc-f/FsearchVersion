@@ -28,6 +28,8 @@ def decode_resp_text(resp):
     return content
 
 def main(url):
+    p = urlparse(url)
+    url = p.scheme + '://' + p.netloc + '/sssssssssssss'
     result = []
     with open('error.yaml','r',encoding='utf-8')as f:
         rules = yaml.safe_load(f.read())
@@ -53,8 +55,6 @@ def regVersion(content,rule):
     return None
 
 if __name__ == '__main__':
-    url = 'https://xss.yt/ffffffff'
-    p = urlparse(url)
-    final_url = p.scheme + '://' + p.netloc + '/sssssssssssss'
-    result = main(final_url)
+    url = 'https://xss.yt/'
+    result = main(url)
     print(result)
